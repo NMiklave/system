@@ -1,3 +1,9 @@
+# National Radio Astronomy Observatory
+# GB bash/sh personal init script
+#
+# Wolfgang Baudler
+# Dec 19, 2001
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -136,13 +142,6 @@ alias hist='history 30'
 # Directory hop shortcuts
 alias home='cd ~'
 alias root='cd /'
-alias docs='cd ~/documents'
-alias ghub='cd ~/github'
-alias windocs='cd /mnt/c/Users/Nicholas\ Miklave/Documents'
-
-# Specific code/program save points
-alias pyproj='cd ~/documents/python_projects'
-alias cadproj='cd ~/documents/miklave_cads'
 
 # Git Hub Commands
 alias g='git'
@@ -154,7 +153,7 @@ alias lg='git log'
 
 # Program Shortcuts
 alias python='python3'
-alias bashrc='emacs -nw ~/.bashrc'
+alias bashrc='emacs ~/.bash_profile'
 alias loadbash='source ~/.bashrc'
 
 # Add color to grep
@@ -163,5 +162,5 @@ export GREP_OPTIONS=' - color=auto'
 # Make emacs the default editor
 export EDITOR=emacs
 
-# Update PYTHONPATH variable for jupyter notebooks
-PYTHONPATH="${PYTHONPATH}:C:\Users\Nicholas Miklave\Documents\Anaconda3\Lib\site-packages"
+# SSH Shortcuts
+alias arecibo='ssh -A -l nm2019 remoter.naic.edu'
