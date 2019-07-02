@@ -1,13 +1,3 @@
-# National Radio Astronomy Observatory
-# GB bash/sh personal init script
-#
-# Wolfgang Baudler
-# Dec 19, 2001
-
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
-
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -153,7 +143,7 @@ alias lg='git log'
 
 # Program Shortcuts
 alias python='python3'
-alias bashrc='emacs ~/.bash_profile'
+alias bashrc='emacs ~/.bashrc'
 alias loadbash='source ~/.bashrc'
 
 # Add color to grep
